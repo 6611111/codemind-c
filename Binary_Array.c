@@ -1,7 +1,7 @@
 #include<stdio.h>
 int main()
 {
-    int n,i,c=0;
+    int n,i,s=0,c=0;
     scanf("%d",&n);
     int a[n];
     for(i=0;i<n;i++)
@@ -10,8 +10,10 @@ int main()
     }
     for(i=0;i<n;i++)
     {
-        if(a[i]==0||a[i]==1)
-        c+=1;
+        if(a[i]==0 || a[i]==1)
+        {
+            c=c+1;
+        }
     }
     if(c==n)
     {
