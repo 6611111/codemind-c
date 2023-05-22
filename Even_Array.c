@@ -11,7 +11,9 @@ int main()
     for(i=0;i<n;i++)
     {
         if(a[i]%2==0)
-        c+=1;
+        {
+            c=c+1;
+        }
     }
     if(c==n)
     {
