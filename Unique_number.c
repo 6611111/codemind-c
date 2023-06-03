@@ -1,53 +1,53 @@
 #include<stdio.h>
 int main()
 {
-    int temp,z=0,o=0,t=0,th=0,f=0,fi=0,s=0,se=0,e=0,n=0;
-    scanf("%d",&temp);
-    while(temp)
+    int n,z=0,o=0,t=0,th=0,f=0,fi=0,s=0,se=0,e=0,ni=0;
+    scanf("%d",&n);
+    while(n!=0)
     {
-        if(temp%10==0)
+        if(n%10==0)
         {
             z++;
         }
-        else if(temp%10==1)
+        else if(n%10==1)
         {
             o++;
         }
-        else if(temp%10==2)
+        else if(n%10==2)
         {
             t++;
         }
-        else if(temp%10==3)
+        else if(n%10==3)
         {
             th++;
         }
-        else if(temp%10==4)
+        else if(n%10==4)
         {
             f++;
         }
-        else if(temp%10==5)
+        else if(n%10==5)
         {
             fi++;
         }
-        else if(temp%10==6)
+        else if(n%10==6)
         {
             s++;
         }
-        else if(temp%10==7)
+        else if(n%10==7)
         {
             se++;
         }
-        else if(temp%10==8)
+        else if(n%10==8)
         {
             e++;
         }
-        else if(temp%10==9)
+        else if(n%10==9)
         {
-            n++;
+            ni++;
         }
-        temp=temp/10;
+        n=n/10;
     }
-    if(z<2 && o<2 && t<2 && th<2 && f<2 && fi<2 && s<2 && se<2 && e<2 && n<2)
+    if(z<2 && o<2 && t<2 && th<2 && f<2 && fi<2 && s<2 && se<2 && e<2 && ni<2)
     {
         printf("Unique Number");
     }
