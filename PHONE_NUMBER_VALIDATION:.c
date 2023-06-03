@@ -1,9 +1,9 @@
 #include<stdio.h>
 int main()
 {
-    int c=0;
     long long int n;
     scanf("%lli",&n);
+    int c=0;
     while(n>0)
     {
         c=c+1;
@@ -11,7 +11,7 @@ int main()
     }
     if(c==10)
     {
-       printf("Valid"); 
+        printf("Valid");
     }
     else
     {
