@@ -1,22 +1,22 @@
 #include<stdio.h>
 int main()
 {
-    int a,b,c,d,e;
-    scanf("%d",&a);
-    b=a%10;
-    c=a/10;
-    d=c%10;
-    e=a/100;
-if(b%2==0 && d%2==0 && e%2==0)
-{
-    printf("Even");
-}
-else if(b%2!=0 && d%2!=0 && e%2!=0)
-{
-    printf("Odd");
-}
-else
-{
-    printf("Mixed");
-}
+    int n,a,b,c,d;
+    scanf("%d",&n);
+    a=n%10;
+    b=n/10;
+    c=b%10;
+    d=n/100;
+    if(a%2==0 && c%2==0 && d%2==0)
+    {
+        printf("Even");
+    }
+    else if(a%2!=0 && c%2!=0 && d%2!=0)
+    {
+        printf("Odd");
+    }
+    else
+    {
+        printf("Mixed");
+    }
 }
