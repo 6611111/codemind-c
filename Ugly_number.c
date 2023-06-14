@@ -1,37 +1,30 @@
 #include<stdio.h>
 int main()
 {
-    int n,q,c=0;
+    int n,a=0;
     scanf("%d",&n);
-    q=n;
-    while(q!=0)
+    while(n!=1)
     {
-        if(q%2==0)
+        if(n%5==0)
         {
-            q=q/2;
+            n=n/5;
         }
-        else if(q%3==0)
+        else if(n%3==0)
         {
-            q=q/3;
+            n=n/3;
         }
-        else
+        else if(n%2==0)
         {
-            c++;
-            break;
-        }
-    }
-    if(c==1)
-    {
-        if(q==1)
-        {
-            printf("Ugly Number");
+            n=n/2;
         }
         else
         {
             printf("Not Ugly Number");
+            a=1;
+            break;
         }
     }
-    else
+    if(a==0)
     {
         printf("Ugly Number");
     }
